@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="./img/honey.png">
+  <div class="float-right"> 
+
+    <form action="/action_page.php">
+      <label for="username">Buscar</label><br>
+      <input type="text" id="buscar" name="username"><br>
+    </form>
+    
+    </div>
+</header>
+
+<section>
+  <nav>
+    Honey
+  </nav>
+  
+  <article>
+    <h1>Lhasa Apso</h1>
+    <p>Lhasa Apso es una raza canina de origen tibetano, de pequeño tamaño, caracterizado principalmente por la gran longitud de su pelo, cuya finalidad principal es evitar la pérdida de calor para soportar las bajas temperaturas y protegerse de la radiaciones solares.</p>
+<img src="./img/Honey1.jpg" alt="Perrito" width="200px">  
+</article>
+</section>
+
+<footer>
+  <p>Adiós, lomitos.</p>
+</footer>
+
+</body>
+</html>
